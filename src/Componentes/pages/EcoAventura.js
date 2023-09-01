@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import mandoImage from '../../Imagen/mando.png';
+import Libro2Image from '../../Imagen/Libro2.png';
+import camaraImage from '../../Imagen/camara.png';
 
 const EcoAventura = () => {
   const [showMinijuegos, setShowMinijuegos] = useState(false);
@@ -10,6 +13,7 @@ const EcoAventura = () => {
     backgroundColor: 'lightblue',
     padding: '20px',
     position: 'relative',
+    minHeight: '100vh', // Asegura que el contenedor ocupe al menos el 100% de la altura de la pantalla
   };
 
   const closeButtonStyle = {
@@ -35,16 +39,48 @@ const EcoAventura = () => {
   };
 
   const buttonContainerStyle = {
-    marginTop: '20px',
+    marginTop: '50px', // Separación desde la parte superior
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
   };
 
   const buttonStyle = {
-    marginRight: '10px',
-    padding: '5px 10px',
+    margin: '40px 100px', // Mayor separación vertical, misma separación horizontal
+    padding: '10px 20px', // Aumentamos el padding para hacer los botones más grandes
     backgroundColor: 'green',
     color: 'white',
     textDecoration: 'none',
     borderRadius: '5px',
+  };
+
+  const imageStyle = {
+    position: 'absolute',
+    top: '50%',
+    right: '50%',
+    transform: 'translate(-622%, -680%)',
+    width: '60px',
+    
+  };
+  const imageStyle2 = {
+    position: 'absolute',
+    top: '50%',
+    right: '50%',
+    transform: 'translate(55%, -680%)',
+    width: '60px',
+    
+  };
+  const imageStyle3 = {
+    position: 'absolute',
+    top: '50%',
+    right: '50%',
+    transform: 'translate(730%, -680%)',
+    width: '60px',
+    
+  };
+
+  const titleStyle = {
+    marginBottom: '30px', // Aumentamos el margen inferior del título
   };
 
   return (
@@ -55,7 +91,10 @@ const EcoAventura = () => {
       <Link to="#" style={homeButtonStyle} onClick={() => { setShowMinijuegos(false); setShowLecturas(false); setShowVideos(false); }}>
         CASA
       </Link>
-      <h1>EcoEDVentures</h1>
+      <h1 style={titleStyle}>EcoEDVentures</h1>
+      <img src={mandoImage} alt="Mando" style={imageStyle} />
+      <img src={Libro2Image} alt="Libro2" style={imageStyle2} />
+      <img src={camaraImage} alt="camara" style={imageStyle3} />
       <div style={buttonContainerStyle}>
         <button onClick={() => { setShowMinijuegos(true); setShowLecturas(false); setShowVideos(false); }} style={buttonStyle}>
           MINIJUEGOS GRATUITOS
@@ -98,6 +137,7 @@ const EcoAventura = () => {
 };
 
 export default EcoAventura;
+
 
 
 

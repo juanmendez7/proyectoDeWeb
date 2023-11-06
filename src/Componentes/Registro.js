@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
+import "./registro.css"
 
 
 
@@ -17,12 +18,25 @@ const Registro = ({ onAcabarRegistro }) => {
   }
 
   return (
-    <div style={{ backgroundColor: 'lightgreen', padding: '20px' }}>
+    <div className='container'>
+      <div className="background-image4"> </div>
+      <div className="login-box">
       <h2>Registrarse</h2>
+      <br/>
+      <br/>
       <form>
         {/* Campos de usuario, correo electrónico y contraseña */}
+        <input type="text" placeholder="Ingresa correo electronico" />
+        <br/>
+        <input type="text" placeholder="Ingresa tu nombre de usuario" />
+        <br/>
+        <input type="text" placeholder="Ingresa contraseña" />
+        <br/>
+        <input type="text" placeholder="Repita su contraseña" />
+        <br/>
         <button onClick={handleAcabarRegistroClick}>Acabar Registro</button>
       </form>
+      </div>
     </div>
   );
 };

@@ -63,8 +63,13 @@
     width: 300px; /* O el ancho que prefieras */
   }
   
+  .login-box h1{
+    color: #000000; /* Color de texto para el título */
+    text-align: center;
+  }
+
   .login-box h2 {
-    color: #333; /* Color de texto para el título */
+    color: #4d1b1b; /* Color de texto para el título */
     text-align: center;
   }
   

@@ -30,7 +30,8 @@ const InicioSesion = ({ onIniciarSesion, onRegistrarse }) => {
       <div className="background-image2"> </div>
       <div className="background-image3"> </div>
     <div className="login-box">
-      <h2>Iniciar Sesión</h2>
+      <h1>ECOEDVENTURES</h1>
+      <h2>¡EDUCACION DEL CAMBIO CLIMATICO!</h2>
       <br/>
       <br/>
       <form>

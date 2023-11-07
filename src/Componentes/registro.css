@@ -36,7 +36,12 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
     width: 300px; /* O el ancho que prefieras */
   }
+  .login-box h1 {
+    color: #333; /* Color de texto para el título */
+    text-align: center;
+  }
   
+
   .login-box h2 {
     color: #333; /* Color de texto para el título */
     text-align: center;

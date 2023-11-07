@@ -6,12 +6,21 @@ import "./registro.css"
 
 const Registro = ({ onAcabarRegistro }) => {
   const [registroCompleto, setRegistroCompleto] = useState(false);
+  const [registroPuesto, setRegistroPuesto] = useState(false);
 
   const handleAcabarRegistroClick = () => {
     // Simulación de lógica de registro exitoso
     setRegistroCompleto(true);
     onAcabarRegistro(); // Llamar a la función de App.js
   };
+
+  const handleRegistroPuestoClick = () => {
+    setRegistroPuesto(true);
+  }
+
+  if(registroPuesto) {
+    return <Navigate to = "/inicio"/>
+  }
 
   if (registroCompleto) {
     return <Navigate to="/ecoaventura" />;
@@ -21,7 +30,8 @@ const Registro = ({ onAcabarRegistro }) => {
     <div className='container'>
       <div className="background-image4"> </div>
       <div className="login-box">
-      <h2>Registrarse</h2>
+      <h1>ECOEDVENTURES</h1>
+      <h2>¡EDUCACION DEL CAMBIO CLIMATICO!</h2>
       <br/>
       <br/>
       <form>
@@ -35,6 +45,8 @@ const Registro = ({ onAcabarRegistro }) => {
         <input type="text" placeholder="Repita su contraseña" />
         <br/>
         <button onClick={handleAcabarRegistroClick}>Acabar Registro</button>
+        <br/>
+        <button onClick={handleRegistroPuestoClick}>¿Ya tienes una cuenta?</button>
       </form>
       </div>
     </div>

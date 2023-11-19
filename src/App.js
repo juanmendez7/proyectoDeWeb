@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom';
 import InicioSesion from './Componentes/InicioSesion';
-import Registro from './Componentes/Registro';
+import Registro from './Componentes/RegistroF';
 import EcoAventura from './Componentes/pages/EcoAventura';
 
 const App = () => {

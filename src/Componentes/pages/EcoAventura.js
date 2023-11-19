@@ -88,6 +88,9 @@ const EcoAventura = () => {
       <Link to="/inicio" style={closeButtonStyle}>
         Cerrar Sesión
       </Link>
+      <Link to="/usuario" style={buttonStyle}>
+        IR A USUARIO
+        </Link>
       <Link to="#" style={homeButtonStyle} onClick={() => { setShowMinijuegos(false); setShowLecturas(false); setShowVideos(false); }}>
         CASA
       </Link>

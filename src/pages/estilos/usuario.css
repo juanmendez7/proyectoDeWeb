@@ -1,0 +1,188 @@
+.frame5 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .frame5 .overlap-group-wrapper {
+    height: 1344px;
+    width: 1920px;
+  }
+  
+  .frame5 .overlap-group {
+    background-color: #00bf63;
+    height: 1329px;
+    position: relative;
+  }
+  
+  .frame5 .chat {
+    background-image: url('../imagenes/logros.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 611px;
+    left: 538px;
+    object-fit: cover;
+    position: absolute;
+    top: 708px;
+    width: 1359px;
+  }
+  
+  .frame5 .fondo-azul {
+    background-color: #058496;
+    height: 455px;
+    left: 0;
+    position: absolute;
+    top: 253px;
+    width: 1903px;
+  }
+  
+  .frame5 .decoracion {
+    background-image: url('../imagenes/decoracion1.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    left: 99px;
+    position: absolute;
+    top: 393px;
+    width: 300px;
+  }
+  
+  .frame5 .img {
+    background-image: url('../imagenes/decoracion4.png');
+    background-size: cover;
+    background-position: center;
+    height: 314px;
+    left: 1416px;
+    position: absolute;
+    top: 385px;
+    width: 322px;
+  }
+  
+  .frame5 .verde-arriba {
+    background-color: #00bf63;
+    height: 376px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1903px;
+  }
+  
+  .frame5 .decoracion-2 {
+    background-image: url('../imagenes/decoracion2.png');
+    background-size: cover;
+    background-position: center;
+    height: 223px;
+    left: 1218px;
+    position: absolute;
+    top: 67px;
+    width: 245px;
+  }
+  
+  .frame5 .decoracion-3 {
+    background-image: url('../imagenes/decoracion3.png');
+    background-size: cover;
+    background-position: center;
+    height: 261px;
+    left: 400px;
+    position: absolute;
+    top: 58px;
+    width: 670px;
+  }
+  
+  .frame5 .foto-usuario {
+    background-image: url('../imagenes/foto-usuario.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    left: 747px;
+    object-fit: cover;
+    position: absolute;
+    top: 228px;
+    width: 400px;
+  }
+  
+  .frame5 .casa {
+    background-image: url('../imagenes/inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 87px;
+    left: 99px;
+    object-fit: cover;
+    position: absolute;
+    top: 67px;
+    width: 87px;
+  }
+  
+  .frame5 .fondo-inicio {
+    background-color: #273cab;
+    border-radius: 49px;
+    height: 28px;
+    left: 108px;
+    position: absolute;
+    top: 160px;
+    width: 69px;
+  }
+  
+  .frame5 .text-wrapper {
+    color: #ffffff;
+    font-family: "Roboto Slab-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 29px;
+    left: 117px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 158px;
+    width: 55px;
+  }
+  
+  .frame5 .titulo-ecoedventures {
+    background-image: url('../imagenes/titulo-eco.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 185px;
+    left: 1496px;
+    position: absolute;
+    top: 18px;
+    width: 407px;
+  }
+  
+  .frame5 .fondo-usuario {
+    background-color: #fff400;
+    height: 128px;
+    left: 707px;
+    position: absolute;
+    top: 557px;
+    width: 473px;
+  }
+  
+  .frame5 .div {
+    color: #000000;
+    font-family: "Roboto Slab-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    height: 84px;
+    left: 750px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 578px;
+    width: 387px;
+  }
+  
+  .frame5 .mensajes {
+    background-image: url('../imagenes/mensajes.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 613px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 707px;
+    width: 541px;
+  }
+  

@@ -98,6 +98,9 @@
   }
   
   .frame1 .usuario-name {
+    background-image: url('../imagenes/usuario.jpg');
+    background-size: cover;
+    background-position: center;
     height: 47px;
     left: 1226px;
     object-fit: cover;

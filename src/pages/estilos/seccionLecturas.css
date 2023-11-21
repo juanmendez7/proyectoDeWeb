@@ -134,6 +134,9 @@
   }
   
   .frame2 .usuario-name {
+    background-image: url('../imagenes/usuario.jpg');
+    background-size: cover;
+    background-position: center;
     height: 47px;
     left: 1226px;
     object-fit: cover;
@@ -275,7 +278,7 @@
   }
   
   .frame2 .imagen-tercerjuego {
-    background-image: url('../imagenes/causascambioclimatico.jpg');
+    background-image: url('../imagenes/queescambioclimatico.jpg');
     background-size: cover;
     background-position: center;
     height: 420px;

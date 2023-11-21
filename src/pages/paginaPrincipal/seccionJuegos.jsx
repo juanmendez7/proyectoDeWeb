@@ -10,6 +10,7 @@ const Seccionjuegos = () =>{
   const [showVideos, setShowVideos] = useState(false);
   const[showInicioSesion, setInicioSesion] = useState(false);
   const[showInicio, setInicio] = useState(false);
+  const[showUsuario, setUsuario] = useState(false);
 
 
  
@@ -28,6 +29,10 @@ const Seccionjuegos = () =>{
   const handleInicioClick = () =>{
     setInicio(true);
   }
+  const handleUsuarioClick = () =>{
+    setUsuario(true);
+  }
+
 
 
   if(showLecturas){
@@ -45,6 +50,10 @@ const Seccionjuegos = () =>{
   if(showInicio){
     return <Navigate to = "/ecoaventura"/>
   }
+  
+  if(showUsuario){
+    return <Navigate to ="/usuario"/>
+  }
 
 
     return(
@@ -57,7 +66,7 @@ const Seccionjuegos = () =>{
           <button class = "boton-videos" onClick={handleVideosClick}/>
           </div>
           <div className="text-wrapper-2">EcoEdVentures</div>
-          <img className="usuario-name" alt="Usuario name" src="usuario-name.png" />
+          <button className='usuario-name' onClick={handleUsuarioClick} />
           <button class = "boton-sesion" onClick={handleInicioSesionClick}/>
           <div className="overlap-group">
             <div className="overlap-2">

@@ -8,6 +8,7 @@ import Seccionlecturas from './pages/paginaPrincipal/seccionLecturas';
 import Seccionvideos from './pages/paginaPrincipal/seccionVideos';
 import { Provider } from 'react-redux'; // Importa Provider desde react-redux
 import { store } from './store/store'; // Reemplaza esto con la ruta correcta hacia tu store
+import Usuario from './pages/usuario';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/seccionjuegos" element={<Seccionjuegos />} />
             <Route path="/seccionlecturas" element={<Seccionlecturas />} />
             <Route path="/seccionvideos" element={<Seccionvideos />} />
+            <Route path ="/usuario" element ={<Usuario/>}/>
             <Route path="/" element={<Navigate to="/inicio" />} />
           </Routes>
         </div>

@@ -1,20 +1,37 @@
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { auth } from "../../Componentes/firebase/config";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { auth } from "../../../firebase/config";
+// import { auth } from "../../../../firebase/config";
+import { register, login } from "./AuthSlice";
 
-export const registerAuth = (email, password ) => {
-    return async ( dispatch ) => {
-        const response = await createUserWithEmailAndPassword(auth, email, password)
-        if (response) {
+export const registerAuth = (email, password, usuario) => {
+  return async (dispatch) => {
+    try {
+      const response = await createUserWithEmailAndPassword(auth, email, password);
+      
+      await updateProfile(auth.currentUser, {
+        displayName: usuario,
+        photoURL: ''
+      });
 
-            await updateProfile( auth.currentUser, {
-                displayName: "Santiago",
-                photoURL: ""
-            })
-
-            const {email} = response.user
-            dispatch( register( { email })) 
-        }else{
-            throw new Error("login failed")
-        }
+      const { email: userEmail } = response.user;
+      dispatch(register({ email: userEmail, usuario }));
+    } catch (error) {
+      console.error('Error during registration:', error.message);
+      throw error;
     }
-}
+  };
+};
+
+export const loginAuth = (email, password) => {
+  return async (dispatch) => {
+    try {
+      const response = await signInWithEmailAndPassword(auth, email, password);
+
+      const { email: userEmail } = response.user;
+      dispatch(login({ email: userEmail }));
+    } catch (error) {
+      console.error('Error during login:', error.message);
+      throw error;
+    }
+  };
+};

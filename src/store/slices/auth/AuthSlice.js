@@ -1,25 +1,30 @@
-import {createSlice} from "@reduxjs/toolkit"
+import { createSlice } from '@reduxjs/toolkit';
 
 export const authSlice = createSlice({
-    name: "auth",
-    initialState: {
-        status: "checking",
-        uid: null,
-        displayName: null,
-        photoUrl: null,
-        errorMessage: null
+  name: 'auth',
+  initialState: {
+    status: 'checking',
+    uid: null,
+    email: null,
+    displayName: null,
+    photoUrl: null,
+    errorMessage: null,
+  },
+
+  reducers: {
+    register: (state, action) => {
+      state.email = action.payload.email;
     },
-    reducers: {
-        register: (state, action) => {
-            state.email = action.playload.email
-        },
-        logout: (state, action) => {
+    logout: (state, action) => {
+      // Aquí puedes realizar las acciones necesarias para el logout si las necesitas
+    },
+    checkingCredentials: (state, action) => {
+      console.log('checking');
+    },
+    login: (state, action) => {
+      // Aquí puedes realizar las acciones necesarias para el login si las necesitas
+    },
+  },
+});
 
-        },
-        checkingCredentials: (state,action) => {
-            console.log("checking")
-        }
-    }
-})
-
-export const { login, logout, checkingCredentials, } = authSlice.actions
+export const { register, logout, checkingCredentials, login } = authSlice.actions;

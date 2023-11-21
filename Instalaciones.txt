@@ -1,0 +1,9 @@
+Instalaciones:
+
+npx create-react-app "nombre"
+npm i react-router-dom
+npm install firebase
+npm install @reduxjs/toolkit
+npm install react-redux
+cd "nombre"
+npm start

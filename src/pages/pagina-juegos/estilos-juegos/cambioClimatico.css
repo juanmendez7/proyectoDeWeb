@@ -1,0 +1,252 @@
+.frameCC {
+    background-color: #00bf63;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .frameCC .div {
+    background-color: #00bf63;
+    height: 1350px;
+    position: relative;
+    width: 1920px;
+  }
+  
+  .frameCC .overlap-group {
+    background-color: #7ed957;
+    height: 838px;
+    left: 0;
+    position: absolute;
+    top: 414px;
+    width: 1903px;
+  }
+  
+  .frameCC .minijuego {
+    background-image: url('../imagenes-juegos/queescambioclimaticolec.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 714px;
+    left: 361px;
+    object-fit: cover;
+    position: absolute;
+    top: 62px;
+    width: 1270px;
+  }
+  
+  .frameCC .overlap {
+    height: 30px;
+    left: 129px;
+    position: absolute;
+    top: 761px;
+    width: 117px;
+  }
+  
+  .frameCC .fondo-regresar {
+    background-color: #2774ab;
+    border-radius: 49px;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 117px;
+  }
+  
+  .frameCC .text-wrapper {
+    color: #ffffff;
+    font-family: "Roboto Slab-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 29px;
+    left: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 93px;
+  }
+  
+  .frameCC .devuelta {
+    background-image: url('../imagenes-juegos/devolver.png');
+    background-size: cover;
+    background-position: center;
+    height: 84px;
+    left: 137px;
+    object-fit: cover;
+    position: absolute;
+    top: 651px;
+    width: 101px;
+  }
+  
+  .frameCC .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Contrail One-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 784px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 69px;
+    white-space: nowrap;
+    width: 442px;
+  }
+  
+  .frameCC .overlap-2 {
+    background-color: #ffffff;
+    height: 91px;
+    left: 0;
+    position: absolute;
+    top: 137px;
+    width: 1903px;
+  }
+  
+  .frameCC .control {
+    background-image: url('../imagenes-juegos/control.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 81px;
+    left: 445px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    width: 80px;
+  }
+  
+  .frameCC .libro {
+    background-image: url('../imagenes-juegos/estar-libros.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 81px;
+    left: 956px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    width: 80px;
+  }
+  
+  .frameCC .videos {
+    background-image: url('../imagenes-juegos/videos.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 81px;
+    left: 1467px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    width: 80px;
+  }
+  
+  .frameCC .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Contrail One-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    left: 784px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 17px;
+    white-space: nowrap;
+    width: 442px;
+  }
+  
+  .frameCC .usuario-name {
+    background-image: url('../imagenes-juegos/usuario.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 47px;
+    left: 1226px;
+    object-fit: cover;
+    position: absolute;
+    top: 56px;
+    width: 260px;
+  }
+  
+  .frameCC .cerrar-sesion {
+    background-image: url('../imagenes-juegos/cerrar-sesion.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 38px;
+    left: 1511px;
+    object-fit: cover;
+    position: absolute;
+    top: 65px;
+    width: 150px;
+  }
+  
+  .frameCC .minijuegos {
+    color: #ffffff;
+    font-family: "Contrail One-Regular", Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    left: 775px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 273px;
+    white-space: nowrap;
+    width: 442px;
+  }
+  
+  .frameCC .derechos-reservados {
+    color: #ffffff;
+    font-family: "Contrail One-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 818px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 1287px;
+    width: 356px;
+  }
+  
+  .frameCC .casa {
+    background-image: url('../imagenes-juegos/inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 87px;
+    left: 59px;
+    object-fit: cover;
+    position: absolute;
+    top: 7px;
+    width: 87px;
+  }
+  
+  .frameCC .overlap-3 {
+    height: 30px;
+    left: 68px;
+    position: absolute;
+    top: 98px;
+    width: 69px;
+  }
+  
+  .frameCC .fondo-inicio {
+    background-color: #273cab;
+    border-radius: 49px;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 69px;
+  }
+  
+  .frameCC .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Roboto Slab-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 29px;
+    left: 9px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 55px;
+  }
+  

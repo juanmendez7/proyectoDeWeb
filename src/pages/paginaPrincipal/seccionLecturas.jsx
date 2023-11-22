@@ -11,6 +11,9 @@ const Seccionlecturas = () =>{
     const[showInicioSesion, setInicioSesion] = useState(false);
     const[showInicio, setInicio] = useState(false);
     const[showUsuario, setUsuario] = useState(false);
+    const[showClimaAmigo, setClimaAmigo] = useState(false);
+    const[showOrigenCambio, setOrigenCambio] = useState(false);
+    const[ShowCambioClimatico, setCambioClimatico] = useState(false);
   
    
     const handleMinijuegosClick = () =>{
@@ -31,6 +34,18 @@ const Seccionlecturas = () =>{
     }
     const handleUsuarioClick = () =>{
       setUsuario(true);
+    }
+
+    const handleClimaAmigoClick = () =>{
+      setClimaAmigo(true);
+    }
+
+    const handleOrigenCambioClick = () =>{
+      setOrigenCambio(true);
+    }
+
+    const handleCambioClimaticoClick = () =>{
+      setCambioClimatico(true);
     }
   
   
@@ -53,6 +68,18 @@ const Seccionlecturas = () =>{
     
   if(showUsuario){
     return <Navigate to ="/usuario"/>
+  }
+
+  if(showClimaAmigo){
+    return <Navigate to = "/climaamigo"/>
+  }
+
+  if(showOrigenCambio){
+    return <Navigate to = "/origencambio"/>
+  }
+
+  if(ShowCambioClimatico){
+    return <Navigate to ="/cambioclimatico"/>
   }
 
 
@@ -78,13 +105,13 @@ const Seccionlecturas = () =>{
               El cuento trata sobre cómo la contaminación atrapa el calor del sol en la atmósfera, causando problemas como escasez de agua, alimentos y eventos climáticos extremos. La "Comunidad Climática", que incluye bosques, ríos, mares, montañas y la atmósfera, se reúne para abordar estos problemas y nos enseña la importancia de proteger nuestro planeta.
               </p>
             </div>
-            <img className="imagen-primerjuego" />
+            <button className="imagen-primerjuego" onClick={handleClimaAmigoClick}/>
           </div>
           <div className="overlap-3">
             <div className="videos-interactivos-wrapper">
               <div className="videos-interactivos">¿QUE ES EL CAMBIO <br/> CLIMÁTICO?</div>
             </div>
-            <img className="imagen-tercerjuego" />
+            <button className="imagen-tercerjuego" onClick={handleCambioClimaticoClick}/>
             <div className="texto-tercerjuego-wrapper">
               <p className="texto-tercerjuego">
                 <a href="http://www.strangeloopgames.com/eco/" rel="noopener noreferrer" target="_blank">
@@ -102,7 +129,7 @@ const Seccionlecturas = () =>{
             <br/> CLIMÁTICO HASTA AHORA </div>
           </div>
           <div className="minijuegos-2">¡Lecturas Educativas!</div>
-          <img className="imagen-segundojuego"  />
+          <button className="imagen-segundojuego" onClick={handleOrigenCambioClick} />
           <img className="nios-jugando" />
           <p className="derechos-reservados">@2023 EcoEDVentures. All rights reserved</p>
           <div className="texto-segundojuego-wrapper">

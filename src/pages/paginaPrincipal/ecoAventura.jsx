@@ -103,9 +103,9 @@ const EcoAventura = () => {
             experiencia.
           </p>
         </div>
-        <img className="imagen-minijuegos" />
-        <img className="imagen-lecturas"  />
-        <img className="imagen-videos"  />
+        <button className="imagen-minijuegos" onClick={handleMinijuegosClick} />
+        <button className="imagen-lecturas" onClick={handleLecturasClick} />
+        <img className="imagen-videos" onClick={handleVideosClick} />
         <img className="nios-jugando" />
         <p className="derechos-reservados">@2023 EcoEDVentures. All rights reserved</p>
       </div>

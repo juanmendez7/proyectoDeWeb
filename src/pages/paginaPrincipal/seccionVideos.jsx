@@ -119,6 +119,6 @@ const Seccionvideos = () =>{
         </div>
 
     )
-}
+  }
 
 export default Seccionvideos;

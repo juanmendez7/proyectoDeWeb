@@ -9,6 +9,7 @@ const EcoAventura = () => {
   const [showLecturas, setShowLecturas] = useState(false);
   const [showVideos, setShowVideos] = useState(false);
   const[showInicioSesion, setInicioSesion] = useState(false);
+  const[showUsuario, setUsuario] = useState(false);
 
 
   const handleMinijuegosClick = () =>{
@@ -28,6 +29,10 @@ const EcoAventura = () => {
     setInicioSesion(true);
   }
 
+  const handleUsuarioClick = () =>{
+    setUsuario(true);
+  }
+
   if(showMinijuegos){
     return <Navigate to = "/seccionjuegos"/>
   }
@@ -42,6 +47,10 @@ const EcoAventura = () => {
 
   if(showInicioSesion){
     return <Navigate to ="/inicio"/>
+  }
+
+  if(showUsuario){
+    return <Navigate to ="/usuario"/>
   }
 
   return (
@@ -63,7 +72,7 @@ const EcoAventura = () => {
             de cambio en la lucha contra el cambio climático.
           </p>
         </div>
-        <img className="usuario-name" alt="Usuario name" src="usuario-name.png" />
+        <button className='usuario-name' onClick={handleUsuarioClick}/>
         <button class = "boton-sesion" onClick={handleInicioSesionClick}/>
         <div className="overlap-2">
           <div className="seccuib" />

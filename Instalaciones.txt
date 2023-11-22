@@ -1,6 +1,6 @@
 Instalaciones:
 
-npx create-react-app "nombre"
+npx create-react-app "nombre", o para instalarlo en el mismo proyecto: npm i react
 npm i react-router-dom
 npm install firebase
 npm install @reduxjs/toolkit

@@ -22,9 +22,14 @@ export const authSlice = createSlice({
       console.log('checking');
     },
     login: (state, action) => {
-      // Aquí puedes realizar las acciones necesarias para el login si las necesitas
+      state.email = action.payload.email;
+    },
+    loginAuthSuccess: (state, action) => {
+      state.email = action.payload; // Almacena el correo electrónico en el estado
     },
   },
 });
 
-export const { register, logout, checkingCredentials, login } = authSlice.actions;
+export const { register, logout, checkingCredentials, login, loginAuthSuccess } = authSlice.actions;
+
+

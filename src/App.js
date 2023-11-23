@@ -6,6 +6,12 @@ import EcoAventura from './pages/paginaPrincipal/ecoAventura';
 import Seccionjuegos from './pages/paginaPrincipal/seccionJuegos';
 import Seccionlecturas from './pages/paginaPrincipal/seccionLecturas';
 import Seccionvideos from './pages/paginaPrincipal/seccionVideos';
+import StardewValley from './pages/pagina-juegos/stardewValley';
+import WorldRescue from './pages/pagina-juegos/worldRescue';
+import Eco from './pages/pagina-juegos/eco';
+import ClimaAmigo from './pages/pagina-juegos/climaAmigo';
+import OrigenCambio from './pages/pagina-juegos/origenCambio';
+import CambioClimatico from './pages/pagina-juegos/cambioClimatico';
 import { Provider } from 'react-redux'; // Importa Provider desde react-redux
 import { store } from './store/store'; // Reemplaza esto con la ruta correcta hacia tu store
 import Usuario from './pages/usuario';
@@ -23,6 +29,12 @@ const App = () => {
             <Route path="/seccionlecturas" element={<Seccionlecturas />} />
             <Route path="/seccionvideos" element={<Seccionvideos />} />
             <Route path ="/usuario" element ={<Usuario/>}/>
+            <Route path ="/stardew" element = {<StardewValley/>}/>
+            <Route path = "/worldrescue" element = {<WorldRescue/>}/>
+            <Route path='/climaamigo' element ={<ClimaAmigo/>}/>
+            <Route path ="/eco" element = {<Eco/>}/>
+            <Route path='/origencambio' element = {<OrigenCambio/>}/>
+            <Route path='/cambioclimatico' element ={<CambioClimatico/>}/>
             <Route path="/" element={<Navigate to="/inicio" />} />
           </Routes>
         </div>

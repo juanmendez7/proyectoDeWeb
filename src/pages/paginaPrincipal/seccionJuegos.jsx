@@ -11,6 +11,9 @@ const Seccionjuegos = () =>{
   const[showInicioSesion, setInicioSesion] = useState(false);
   const[showInicio, setInicio] = useState(false);
   const[showUsuario, setUsuario] = useState(false);
+  const[showStardew, setStardew] = useState(false);
+  const[showWrescue, setWrescue] = useState(false)
+  const[showEco, setEco] = useState(false);
 
 
  
@@ -33,6 +36,18 @@ const Seccionjuegos = () =>{
     setUsuario(true);
   }
 
+  const handleStardewClick = ()=>{
+    setStardew(true);
+  }
+
+  const handleWrescue = () =>{
+    setWrescue(true);
+  }
+
+  const handleEcoClick = () => {
+    setEco(true);
+  }
+
 
 
   if(showLecturas){
@@ -53,6 +68,18 @@ const Seccionjuegos = () =>{
   
   if(showUsuario){
     return <Navigate to ="/usuario"/>
+  }
+
+  if(showStardew){
+    return <Navigate to = "/stardew"/>
+  }
+
+  if(showWrescue){
+    return <Navigate to = "/worldrescue"/>
+  }
+  
+  if(showEco){
+    return <Navigate to = "/eco"/>
   }
 
 
@@ -81,13 +108,13 @@ const Seccionjuegos = () =>{
                 mejor en cada caso. Recomendado para mayores de 12 años.
               </p>
             </div>
-            <img className="imagen-primerjuego" />
+            <button className="imagen-primerjuego" onClick={handleStardewClick}/>
           </div>
           <div className="overlap-3">
             <div className="videos-interactivos-wrapper">
               <div className="videos-interactivos">Eco</div>
             </div>
-            <img className="imagen-tercerjuego" />
+            <button className="imagen-tercerjuego" onClick={handleEcoClick}/>
             <div className="texto-tercerjuego-wrapper">
               <p className="texto-tercerjuego">
                 <a href="http://www.strangeloopgames.com/eco/" rel="noopener noreferrer" target="_blank">
@@ -107,7 +134,7 @@ const Seccionjuegos = () =>{
             <div className="lecturas">World Rescue</div>
           </div>
           <div className="minijuegos-2">¡Juega Ahora!</div>
-          <img className="imagen-segundojuego"  />
+          <button className="imagen-segundojuego"  onClick={handleWrescue}/>
           <img className="nios-jugando" />
           <p className="derechos-reservados">@2023 EcoEDVentures. All rights reserved</p>
           <div className="texto-segundojuego-wrapper">

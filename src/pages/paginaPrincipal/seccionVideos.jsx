@@ -99,7 +99,7 @@ const Seccionvideos = () =>{
             <div className="lecturas">EL CAMBIO CLIMATICO</div>
           </div>
           <div className="minijuegos-2">¡Videos Interactivos!</div>
-          <img className="imagen-segundojuego"  />
+          <button className="imagen-segundojuego"  />
           <img className="nios-jugando" />
           <p className="derechos-reservados">@2023 EcoEDVentures. All rights reserved</p>
           <div className="texto-segundojuego-wrapper">
@@ -119,6 +119,6 @@ const Seccionvideos = () =>{
         </div>
 
     )
-}
+  }
 
 export default Seccionvideos;
